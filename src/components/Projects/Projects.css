@@ -1,0 +1,166 @@
+
+.projectsPage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.project-main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+    height: 70vh;
+    margin-top: 10vh;
+    animation-delay: 4s;
+    animation: box-shadow 4s ease-in-out;
+    
+
+}
+
+.project-col{
+    width: 24%;
+    height: 100%;
+}
+
+.project-big{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position:center;
+    transition: transform 1s;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+.project-small{
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    background-position:center;
+    transition: transform 1s;
+    border-radius: 20px;
+    margin: 2px;
+    
+}
+
+.project1{
+    
+    background-image: url(Projects-images/cat-5887426_1920.jpg);
+    animation: pop 2s ease;
+
+}
+.project2{
+   
+    background-image: url(Projects-images/concert-3084876_1920.jpg);
+    animation: pop 3s ease;
+   
+}
+.project3{
+
+    background-image: url(Projects-images/guitars-2912447_1920.jpg);
+    animation: pop 3s ease;
+    
+}
+.project4{
+
+    background-image: url(Projects-images/laptop-5842509_1920.jpg);
+    animation: pop 2s ease;
+    
+}
+.project5{
+
+    background-image: url(Projects-images/leaves-5825458_1920.jpg);
+    animation: pop 1s ease;
+    
+}
+.project6{
+    
+    background-image: url(Projects-images/leaves-5839550_1920.jpg);
+    animation: pop 2s ease;
+   
+}
+.project7{
+    
+    background-image: url(Projects-images/oranges-5010270_1920.jpg);
+    animation: pop 1s ease;
+  
+}
+.project8{
+    
+    background-image: url(Projects-images/palm-2445110_1920.jpg);
+    animation: pop 3s ease;
+   
+}
+
+
+.project-big:hover{
+    transform: scale(1.2);
+    filter: brightness(1.3);
+    box-shadow: 0 0 10px 5px black;
+    z-index: 1000;
+}
+
+.project-small:hover{
+    transform: scale(1.2);
+    filter: brightness(1.3);
+    box-shadow: 0 0 10px 5px black;
+    z-index: 1000;
+    
+}
+
+
+@media (max-width: 1000px){
+    .project-main{
+        width: 800px;
+        height: 400px;
+        justify-content: space-around;
+        box-shadow: none;
+    }
+    .project-col{
+        width: 200px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px){
+    .project-main{
+        width: 100%;
+    }
+    .project-col{
+        width: 50%;
+        height: 500px;
+    }
+
+    .project-big:hover{
+        transform: none;
+    }
+
+    .project-small:hover{
+        transform: none;
+    }
+}
+
+
+
+
+@keyframes pop {
+    0%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
